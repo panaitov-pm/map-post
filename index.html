@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google Map Location</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- BEGIN map-section  -->
+	<div class="map-section">
+		<div class="map-title">
+			<h3>Map Location</h3>
+		</div>
+		<div class="location-form">
+			<div class="text-center">
+				<button class="show-my-pos">Show My Location</button>
+				<h3>OR</h3>
+			</div>
+			<form action="">
+				<p class="map-form-field">
+					<label for="map-country">Country</label>
+					<select name="" id="map-country"></select>
+				</p>
+				<p class="map-form-field">
+					<label for="map-city">City</label>
+					<input id="map-city" type="text">
+				</p>
+				<p class="map-form-field">
+					<label for="map-address">Address</label>
+					<input id="map-address" type="text">
+				</p>
+				<p class="map-form-field">
+					<label for="map-zip">Zip Code</label>
+					<input id="map-zip" type="number">
+				</p>
+				<p class="map-form-field text-center">
+					<button type="submit">Find Location</button>
+				</p>
+			</form>
+		</div>
+		<!-- End location-form -->
+		<div class="map-body">
+			<div id="map" class="map"></div>
+			<!-- END map -->
+			<div class="address-form">
+				<div class="address-form__item">
+					<input class="address-form__field start-route" type="text" name="first-address" placeholder="Start route" autocomplete="on">
+				</div>
+				<div class="address-form__item">
+					<input class="address-form__field end-route" type="text" name="second-address" placeholder="End route" autocomplete="on">
+				</div>
+				<button class="address-form__btn" type="submit">Run</button>
+			</div>
+			<!-- END address-form -->
+		</div>
+	</div>
+	<!-- END map-section -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/countries.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-wm7qCa7e-pkmWODOhjCah6zUlCKiHd0"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

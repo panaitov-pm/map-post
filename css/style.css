@@ -1,0 +1,109 @@
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.text-center {
+	text-align: center;
+}
+.map-section {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.map-body {
+	position: relative;
+}
+
+.map {
+    height: 500px; /* height is important, because the map doesn't show */
+}
+
+.address-form {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.address-form__item {
+	margin-bottom: 10px;
+}
+
+.address-form__field {
+	width: 100%;
+	padding: 10px 16px;
+	border: 0;
+	border-radius: 5px;
+	outline: 0;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.address-form__btn {
+	padding: 5px 45px;
+	border: 2px solid #669;
+	border-radius: 5px;
+	outline: 0;
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	background-color: #669;
+	color: #FFF;
+}
+
+.address-form__btn:hover {
+	color: #669;
+	background-color: rgba(255, 255, 255, 0.6);	
+}
+
+.map-title{
+	background: #669;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+.map-title h3{
+	color: rgba(255,255,255,.87);
+	font-family: 'Open Sans';
+	font-weight: 700;
+}
+.location-form{
+	display: none;
+}
+.location-form form{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 400px;
+}
+.location-form label,
+.location-form input, 
+.location-form select{
+	width: 100%;
+	display: inline-block;
+}
+.location-form label{
+	font-family: 'Open Sans';
+}
+
+.location-form input, 
+.location-form select{
+	padding: 5px;
+}
+
+.location-form [type="submit"], 
+.location-form .show-my-pos{
+	background: #669;
+	border: none;
+	color: rgba(255,255,255,.87);
+	padding: 5px 15px;
+	font-family: 'Open Sans';
+	cursor: pointer;
+}
+.location-form .show-my-pos{
+	margin-top: 30px;
+}
+
+.map-form-field.error{
+	background: #D32F2F;
+}    
